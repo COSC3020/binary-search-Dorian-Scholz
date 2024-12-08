@@ -6,13 +6,13 @@ function binarySearch(list, element) {
         let mid = Math.floor((left + right) / 2);
 
         if (list[mid] === element) {
-            return mid; // Element found
+            return mid; 
         } else if (list[mid] < element) {
-            left = mid + 1; // Look in the right half
+            left = mid + 1
         } else {
-            right = mid - 1; // Look in the left half
+            right = mid - 1;
         }
     }
 
-    return -1; // Element not found
+    return -1;
 }
